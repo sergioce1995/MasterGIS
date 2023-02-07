@@ -1,0 +1,24 @@
+header¨{
+    background-color: greenyellow;
+    text-align: center;
+    font-size: 60px;
+}
+nav{
+    background-color: grey;
+}
+section{
+    background-color: chocolate;
+}
+article{
+    background-color: aquamarine;
+}
+footer{
+    background-color: black;
+}
+aside{
+    background-color: beige;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
