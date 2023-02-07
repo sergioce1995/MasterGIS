@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+  function calcularDNI() {
+    var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+    var dniNumero = prompt("Por favor, ingrese el número de su DNI (sin la letra)");
+
+    if (dniNumero < 0 || dniNumero > 99999999) {
+      alert("El número proporcionado no es válido");
+      return;
+    }
+
+    var letrasIndex = dniNumero % 23;
+    var dniLetras = letras[letrasIndex];
+
+    alert("La letra correspondiente a su DNI es: " + dniLetras);
+  }
+</script>
+</head>
+<body>
+  <button onclick="calcularDNI()">Calcular letra del DNI</button>
+</body>
+</html>
+
