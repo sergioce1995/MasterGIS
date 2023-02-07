@@ -1,0 +1,22 @@
+h1 {
+    color: rgb(14, 182, 126);
+}
+.rojo {
+    color: red;
+}
+.naranja {
+    color: orange;
+}
+#subrayado {
+    text-decoration: underline;
+}
+.azul {
+    color:blue;
+}
+.verde {
+    color: green;
+}
+#rosa {
+    color: pink}
+.verdeRaro {
+    color: greenyellow}
