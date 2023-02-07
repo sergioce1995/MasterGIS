@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <script>
+      function calculateFactorial() {
+        let num = parseInt(prompt("Introduce un número: "));
+        let factorial = 1;
+        for (let i = 1; i <= num; i++) {
+          factorial *= i;
+        }
+        alert("El factorial de " + num + " es " + factorial);
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="calculateFactorial()">Calcular factorial</button>
+  </body>
+</html>
