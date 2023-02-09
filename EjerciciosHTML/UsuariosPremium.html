@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script>
+      const users = [
+        {username: 'ppc90', age: 30, premium: false},
+        {username: 'lu65', age: 24, premium: false},
+        {username: 'maria3', age: 36, premium: false},
+        {username: 'abc123', age: 20, premium: true},
+        {username: 'sergio58', age: 26, premium: true},
+      ];
+
+      const nonPremiumUsers = users.filter(function(user) {
+        return !user.premium;
+      });
+
+      users.forEach(function(user) {
+        if (user.premium) {
+          console.log(user.username + " es usuario premium");
+        }
+      });
+
+      console.log("Usuarios no premium: " + JSON.stringify(nonPremiumUsers));
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
