@@ -1,0 +1,24 @@
+<form>
+    <label for="numberInput">Introduce un número:</label>
+    <input type="text" id="numberInput">
+    <button type="submit">Verificar</button>
+  </form>
+  
+  <script>
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const numberInput = document.querySelector('#numberInput');
+      const number = parseInt(numberInput.value);
+      if (number % 2 === 0) {
+        displayDate(`${number} es un número par`);
+      } else {
+        displayDate(`${number} es un número impar`);
+      }
+    });
+  
+    function displayDate(message) {
+      document.body.innerHTML += `<p>${message}</p>`;
+    }
+  </script>
+  
