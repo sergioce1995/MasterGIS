@@ -1,0 +1,137 @@
+/* Agrega un fondo y cambia el color del texto de todo el cuerpo */
+body {
+  background-color: #d8d8d8;
+  color: #333;
+  }
+  
+
+  /* Estilos para los encabezados */
+  h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  }
+  
+  h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  }
+  
+  h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  }
+  
+  /* Estilos para los párrafos de datos personales */
+  p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  }
+  
+  /* Estilos para la lista de habilidades */
+  ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  }
+  
+  ul li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  }
+  
+  /* Estilos para el botón */
+  .btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  }
+  
+  .btn-primary {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  }
+  
+  /* Estilos para la sección de experiencia */
+  #experiencia {
+  margin-top: 20px;
+  }
+  
+  #experiencia h4 {
+  margin-top: 15px;
+  }
+  
+  #experiencia ul {
+  margin-top: 10px;
+  margin-left: 20px;
+  }
+  
+  /* Oculta la sección de experiencia por defecto */
+  #experiencia {
+  display: none;
+  }
+  
+  /* Cambia el estilo del botón al hacer clic */
+  #experiencia-btn {
+  margin-top: 10px;
+  }
+  
+  #experiencia-btn i {
+  margin-right: 5px;
+  }
+  
+  #experiencia-btn .bi-chevron-bar-expand {
+  transform: rotate(90deg);
+  }
+  
+  #experiencia-btn.show i {
+  transform: rotate(180deg);
+  }
+  
+  #experiencia-btn.show .bi-chevron-bar-expand {
+  transform: rotate(0deg);
+  }
+
+  
+/*MEDIAQUERY 
+/* Estilos para pantallas grandes (más de 768 píxeles) */
+@media only screen and (min-width: 768px) {
+  /* Ajustar tamaño de la imagen */
+  .mi-imagen {
+    width: 300px;
+    height: 300px;
+  }
+  /* Ajustar ancho de la sección principal */
+  .main-section {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+/* Estilos para pantallas pequeñas (menos de 768 píxeles) */
+@media only screen and (max-width: 767px) {
+  /* Ajustar tamaño de la imagen */
+  .mi-imagen {
+    width: 200px;
+    height: 200px;
+  }
+  /* Ajustar ancho de la sección principal */
+  .main-section {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+  
